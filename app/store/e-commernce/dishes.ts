@@ -1,3 +1,4 @@
+import { ab } from "./../types/types";
 // import exp from "constants";
 import { StateCreator } from "zustand";
 import { Dishes, aa } from "../types/types";
@@ -7,7 +8,7 @@ const dishes: StateCreator<aa> = (set) => ({
   cards: [],
   allCards: [],
   loading: true,
-  card: {},
+  card: [],
   err: "",
   fetchDishes: async (input: string) => {
     set((state) => ({
@@ -41,7 +42,7 @@ const dishes: StateCreator<aa> = (set) => ({
       const data = await res.data;
       set(() => ({
         loading: false,
-        card: data,
+        card: [data],
       }));
     } catch (error: unknown | any) {
       set(() => ({

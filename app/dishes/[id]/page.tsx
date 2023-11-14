@@ -15,20 +15,22 @@ const Details = ({ params }: param) => {
   useEffect(() => {
     fetchDishe(params.id);
   }, []);
-  //   console.log(cards);
-  //   console.log(card);
+  // console.log(card);
 
   return (
     <div className="details">
       <section className="details-info">
-        <div className="container">
-          <img src={card.imgUrl} alt="" />
-          <div className="d1">
-            <p className="p1">{card.name}</p>
-            <p className="p2">{card.price} $</p>
-            <p className="p3">{card.category}</p>
-          </div>
-        </div>
+        {card.length > 0 &&
+          card.map((el) => (
+            <div key={el.id} className="container">
+              <img src={el.imgUrl} alt="" />
+              <div className="d1">
+                <p className="p1">{el.name}</p>
+                <p className="p2">{el.price} $</p>
+                <p className="p3">{el.category}</p>
+              </div>
+            </div>
+          ))}
       </section>
     </div>
   );

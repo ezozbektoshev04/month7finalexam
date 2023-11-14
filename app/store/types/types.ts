@@ -11,13 +11,13 @@ export type All = {
   err: any | unknown;
   fetchDishe: (id: string) => void;
   cards: [] | ab[];
-  card: ab | {};
+  card: [] | ab[];
   allCards: [] | ab[];
 };
 export type aa = {
   err: any | unknown;
   cards: [] | ab[];
-  card: ab | {};
+  card: [] | ab[];
   allCards: [] | ab[];
   loading: boolean;
   fetchDishes: (input: string) => void;
