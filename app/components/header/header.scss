@@ -1,0 +1,122 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: white;
+  .container {
+    padding-top: 40px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #cbcbcb;
+    .show {
+      display: block;
+    }
+    .hide {
+      display: none;
+    }
+    .nav-toggle {
+      display: none;
+    }
+    .d40 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .toggle-icon {
+        display: none;
+      }
+      .d1 {
+        display: flex;
+        column-gap: 100px;
+        align-items: center;
+        .nav-links {
+          display: flex;
+          align-items: center;
+          column-gap: 53px;
+          .nav-link {
+            text-decoration: none;
+            color: #606060;
+            transition: 0.4s;
+            font-size: 17.829px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26.743px; /* 150% */
+            text-transform: capitalize;
+            &:hover {
+              color: #6c5fbc;
+            }
+            &:active {
+              color: #6c5fbc;
+            }
+          }
+        }
+      }
+      .nav-items {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        .btn1 {
+          cursor: pointer;
+          color: #606060;
+          padding: 10.829px 15.743px;
+          font-size: 17.829px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 26.743px; /* 150% */
+          text-transform: capitalize;
+          background-color: transparent;
+        }
+        .btn2 {
+          color: #f9f9f9;
+          border-radius: 17.829px;
+          background: #6c5fbc;
+          padding: 17.829px 26.743px;
+          font-size: 17.829px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 26.743px; /* 150% */
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .toggle-icon {
+    display: block !important;
+    cursor: pointer;
+  }
+  .nav-link {
+    display: none !important;
+  }
+  .btn1 {
+    display: none;
+  }
+  .btn2 {
+    display: none;
+  }
+  .container {
+    display: block !important;
+  }
+  .d40 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-toggle {
+    display: flex !important;
+    flex-direction: column;
+    row-gap: 15px;
+    padding-top: 20px;
+    width: 100%;
+    .links {
+      color: #606060;
+      // font-family: Inter;
+      font-size: 18.829px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 26.743px; /* 150% */
+      text-transform: capitalize;
+    }
+  }
+}

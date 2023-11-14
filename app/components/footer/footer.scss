@@ -1,0 +1,35 @@
+footer {
+  background: #eaeaea;
+  .container {
+    .d1 {
+      padding-top: 96px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(51, 51, 51, 0.25);
+    }
+    .d2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 57px;
+      padding-bottom: 51px;
+      .p1 {
+        color: #999;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25px; /* 147.059% */
+      }
+      .icons {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 570px) {
+  .d2 {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

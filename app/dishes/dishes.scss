@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.dishes {
+  padding-top: 125px;
+  .dishes-products {
+    .container {
+      border-bottom: 1px solid #cbcbcb;
+      padding-top: 40px;
+      .search {
+        border: 1px solid #bbbbbb;
+        border-radius: 10px;
+        width: 300px;
+        padding: 20px 20px;
+      }
+      .cards {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 15px;
+        flex-wrap: wrap;
+        padding-bottom: 55px;
+        .card {
+          margin-bottom: 35px;
+          padding-top: 37px;
+          position: relative;
+          width: 224.628px;
+          border-radius: 34.581px;
+          border: 1.441px solid var(--colors-gray-gray-2, #f4f4f6);
+          background: var(--Pure-White, #fff);
+          box-shadow: 6.84842px 82.18102px 41.09051px 0px
+            rgba(229, 229, 229, 0.7);
+          .img16 {
+            position: absolute;
+            right: 21px;
+            top: 30px;
+          }
+          .image17 {
+            padding-left: 16px;
+            width: 200.907px;
+            height: 200.907px;
+          }
+          .card-bot {
+            padding: 0px 25px 28px 25px;
+            .p3 {
+              color: #daa31a;
+              font-feature-settings: "clig" off, "liga" off;
+              font-family: "Poppins", sans-serif;
+              font-size: 11.422px;
+              border-radius: 4.828px;
+              background: #f7edd0;
+              padding: 2px 8px;
+              width: 58.896px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+            .p5 {
+              background: #f7c5ba;
+              font-feature-settings: "clig" off, "liga" off;
+              font-family: "Poppins", sans-serif;
+              font-size: 11.422px;
+              border-radius: 4.828px;
+              color: #fb471d;
+              padding: 2.2px 7.5px 1.8px;
+              width: 64.375px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+            .p6 {
+              color: #309d5b;
+              font-feature-settings: "clig" off, "liga" off;
+              font-family: "Poppins", sans-serif;
+              font-size: 11.422px;
+              border-radius: 4.828px;
+              background: rgba(51, 173, 100, 0.2);
+              padding: 2.2px 7.5px 1.8px;
+              width: 64.375px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+            .p4 {
+              display: none;
+            }
+            .p2 {
+              color: var(--BLACK, #323142);
+              font-feature-settings: "clig" off, "liga" off;
+              font-family: "Poppins";
+              font-size: 23.054px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 37.463px; /* 162.5% */
+            }
+            .d5 {
+              display: flex;
+              align-items: center;
+              column-gap: 5.76px;
+              padding-top: 1px;
+              padding-bottom: 13px;
+              .p7 {
+                color: var(--Grey, #8e97a6);
+                font-feature-settings: "clig" off, "liga" off;
+                font-size: 17.291px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 23.054px;
+              }
+            }
+            .d6 {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding-right: 5px;
+              .p8 {
+                color: var(--BLACK, #323142);
+                font-size: 25.936px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 40.345px; /* 155.556% */
+              }
+              .img18 {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      .btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding-top: 16px;
+        padding-bottom: 50px;
+        .pagebtn {
+          background-color: lightblue;
+          padding: 15px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  .questions {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .container {
+      .p1 {
+        max-width: 408px;
+        padding-bottom: 70px;
+        margin: 0 auto;
+        color: #323142;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 54px */
+        .sp1 {
+          color: #6c5fbc;
+        }
+      }
+      .d10 {
+        border-bottom: 1px solid #adadad;
+        .d11 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+          padding-top: 20px;
+          .p2 {
+            color: #323142;
+            font-family: "Poppins", sans-serif;
+            font-size: 23.417px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 59.24px; /* 252.982% */
+          }
+          .show {
+            display: block;
+            cursor: pointer;
+          }
+          .hide {
+            display: none;
+          }
+        }
+        .p30 {
+          padding-bottom: 20px;
+          color: #686868;
+          max-width: 787px;
+          font-family: "Poppins", sans-serif;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%; /* 32px */
+          letter-spacing: 0.2px;
+        }
+        .hide-text {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 590px) {
+  .cards {
+    justify-content: center !important;
+  }
+  .questions {
+    .p2 {
+      font-size: 16px !important;
+    }
+    .p30 {
+      font-size: 13px !important;
+    }
+  }
+}
+@media (max-width: 590px) {
+  .questions {
+    .p2 {
+      font-size: 12px !important;
+    }
+    .p30 {
+      font-size: 11px !important;
+    }
+  }
+}
