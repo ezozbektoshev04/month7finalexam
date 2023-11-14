@@ -14,7 +14,20 @@ const Login = () => {
   const [show2, setShow2] = useState(false);
   const [show3, setShow3] = useState(false);
   const router = useRouter();
-  const aa = JSON.parse(localStorage.getItem("user") || "[]");
+  // const aa = JSON.parse(localStorage.getItem("user") || "[]");
+  const [aa, setAA] = useState<Users[]>([]);
+
+  useEffect(() => {
+    // Check if we're on the client side before accessing localStorage
+    if (typeof window !== "undefined") {
+      // Retrieve and parse data from localStorage
+      const storedUserData: string | null = localStorage.getItem("user");
+      const parsedUserData: Users[] = storedUserData
+        ? JSON.parse(storedUserData)
+        : [];
+      setAA(parsedUserData);
+    }
+  }, []);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setUserInput({
       ...userInput,
