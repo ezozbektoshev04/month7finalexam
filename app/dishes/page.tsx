@@ -6,15 +6,6 @@ import Link from "next/link";
 import Loading from "../loading";
 import { Dishes, ab } from "../store/types/types";
 import { json } from "stream/consumers";
-type NewArray = {
-  id: string;
-  name: string;
-  category: string;
-  price: string | number;
-  stars: string;
-  imgUrl: string;
-  quantity: number;
-};
 
 const DishesPage = () => {
   const [page, setPage] = useState(1);

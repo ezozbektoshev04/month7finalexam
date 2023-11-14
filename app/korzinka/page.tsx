@@ -15,12 +15,18 @@ type NewArray = {
 
 const KorzinkaPage = () => {
   //   const [counter, setCounter] = useState(1);
-  const [added, setAdded] = useState<NewArray[]>(
-    JSON.parse(localStorage.getItem("dishs") || "[]")
-  );
+  let ac = JSON.parse(localStorage.getItem("dishs") || "[]");
+  const [added, setAdded] = useState<NewArray[]>(ac);
 
   useEffect(() => {
-    localStorage.setItem("dishs", JSON.stringify(added));
+    localStorage.setItem(
+      "dishs",
+      JSON.stringify(
+        added.map((el) => {
+          return { ...el, quantity: el.quantity };
+        })
+      )
+    );
   }, [added]);
 
   const decrement = (id: string) => {
